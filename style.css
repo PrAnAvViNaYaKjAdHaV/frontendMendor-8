@@ -1,0 +1,114 @@
+:root {
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+main {
+  background: url("/images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-around;
+}
+.content {
+  min-height: 1rem;
+  max-width: 26rem;
+  background: white;
+  border-radius: 0.9rem;
+}
+.content > img {
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+.content > img {
+  width: 100%;
+}
+
+.text {
+  max-width: 75%;
+  margin: 0 auto;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.4rem;
+}
+.text > h1{
+  color: var(--Dark_blue);
+}
+.text > p {
+  line-height: 1.5rem;
+}
+.musicplan {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  background-color: var(--Very_pale_blue);
+  min-height: 4.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+.musicplan > img {
+  background-color: var(--Pale_blue);
+  border-radius: 100%;
+}
+.musicplan > div {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  min-width: 75%;
+  margin: 0.7rem auto;
+  min-height: 3rem;
+  border-radius: 0.5rem;
+}
+.payment {
+  background: var(--Bright_blue);
+  color: white;
+  border: none;
+}
+.cancleOrder {
+  color: var(--Desaturated_blue);
+  background-color: white;
+  font-size:1.2rem ;
+  border: none;
+  font-weight:bolder;
+}
+span > p:first-child {
+  font-weight: bolder;
+  color: var(--Dark_blue);
+  font-size:1.2rem ;
+}
+a {
+  color: var(--Bright_blue);
+  font-weight: bolder;
+}
+.payment:hover {
+  opacity: 0.4;
+}
+.cancleOrder:hover {
+  color: var(--Dark_blue);
+}
+a:hover {
+  opacity: 0.4;
+  text-decoration: none;
+}
